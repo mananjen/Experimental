@@ -57,3 +57,6 @@ Desktop.ini
 .env.*
 !.env.example
 *.log
+
+# Generated documentation site
+/site/

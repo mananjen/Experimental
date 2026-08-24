@@ -1,0 +1,10 @@
+site_name: Experimental
+site_description: Design notes and development history for Experimental
+site_url: https://mananjen.github.io/Experimental/
+repo_url: https://github.com/mananjen/Experimental
+repo_name: mananjen/Experimental
+
+theme:
+  name: mkdocs
+
+strict: true
