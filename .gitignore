@@ -1,0 +1,59 @@
+# Unity-generated directories
+/game/[Ll]ibrary/
+/game/[Tt]emp/
+/game/[Oo]bj/
+/game/[Ll]ogs/
+/game/[Uu]ser[Ss]ettings/
+/game/[Mm]emoryCaptures/
+/game/[Rr]ecordings/
+/game/[Ee]xportedObj/
+/game/.gradle/
+
+# Unity build output
+/game/[Bb]uild/
+/game/[Bb]uilds/
+
+# Auto-generated IDE project files
+/game/*.csproj
+/game/*.sln
+/game/*.slnx
+/game/*.suo
+/game/*.user
+/game/*.userprefs
+/game/*.pidb
+/game/*.booproj
+/game/*.svd
+/game/*.pdb
+/game/*.mdb
+/game/*.opendb
+/game/*.VC.db
+
+# IDE and editor state
+.vs/
+.vscode/
+.idea/
+*.tmp
+*.swp
+*~
+
+# Unity-generated crash and profiling data
+sysinfo.txt
+crashlytics-build.properties
+mono_crash.*
+
+# Unity Asset Store tools
+/game/Assets/AssetStoreTools*
+
+# Visual Studio cache generated inside Assets
+/game/Assets/Plugins/Editor/JetBrains*
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local environment files and logs
+.env
+.env.*
+!.env.example
+*.log
