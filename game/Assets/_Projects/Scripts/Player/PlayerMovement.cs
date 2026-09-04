@@ -3,7 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f;
+    [Header("Movement")]
+    [SerializeField] private float maxMoveSpeed = 5f;
+    [SerializeField] private float acceleration = 25f;
+    [SerializeField] private float deceleration = 35f;
 
     private Rigidbody2D rb;
     private float moveInput;
@@ -32,8 +35,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        float targetSpeed = moveInput * maxMoveSpeed;
+
+        float rate = Mathf.Abs(targetSpeed) > 0.01f
+            ? acceleration
+            : deceleration;
+
+        float newXVelocity = Mathf.MoveTowards(
+            rb.linearVelocity.x,
+            targetSpeed,
+            rate * Time.fixedDeltaTime
+        );
+
         rb.linearVelocity = new Vector2(
-            moveInput * moveSpeed,
+            newXVelocity,
             rb.linearVelocity.y
         );
     }
